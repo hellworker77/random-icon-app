@@ -1,0 +1,14 @@
+<div>
+  <button (click)="showRandomIcon()">
+    Generate random icon
+    <span *ngIf="randomIcon" class="icon">
+      <fa-icon [icon]="randomIcon"></fa-icon>
+    </span>
+    <span *ngIf="!randomIcon" class="icon">
+      <fa-icon [icon]="faSpinner"
+               animation="spin">
+      </fa-icon>
+    </span>
+  </button>
+
+</div>
